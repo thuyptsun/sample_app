@@ -1,12 +1,20 @@
 vi:
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  log_in: "Đăng nhập"
+  sample_app: "Sample App"
   static_pages:
     home:
       sample_app: "Ứng dụng mẫu"
-      home: "Trang chủ"
+      home: "Chào mừng đến với ứng dụng mẫu"
       home_page: "Đây là trang chủ của"
       tutorial: "Tài liệu Ruby on Rails"
       sample_application: "ứng dụng mẫu"
+      sign_up: "Đăng nhập ngay!"
+      news: "Tin tức"
+      contact: "Liên hệ"
+      about: "Về chúng tôi"
     help:
       sample_app: "Ứng dụng mẫu"
       help: "Trợ giúp"
@@ -27,3 +35,9 @@ vi:
       tutorial: "Ruby on Rails Tutorial"
       ruby_on_rails: "Ruby on Rails"
       this: "Đây là 1 app cơ bản để hướng dẫn"
+    contact:
+      by: "được viết bởi"
+      au: "Michael Hartl"
+  user:
+    signup: "Đăng kí"
+    content: "Đây sẽ là trang đăng kí cho người dùng mới."
