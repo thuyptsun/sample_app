@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= t "static_pages.about.the"%>
+    <%= link_to (t "static_pages.home.tutorial"), Settings.link.railstutorial.home %>
+    <%= t "static_pages.contact.by"%>
+    <%= link_to (t "static_pages.contact.au"), Settings.link.railstutorial.au %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to (t "static_pages.home.about"), about_path %></li>
+      <li><%= link_to (t "static_pages.home.contact"), contact_path %></li>
+      <li><%= link_to (t "static_pages.home.news"), Settings.link.railstutorial.news %></li>
+    </ul>
+  </nav>

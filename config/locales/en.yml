@@ -1,12 +1,20 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
+  home: "Home"
+  help: "Help"
+  log_in: "Log in"
+  sample_app: "Sample App"
   static_pages:
     home:
       sample_app: "Sample App"
-      home: "Home"
+      home: "Welcom to the Sample App"
       home_page: "This is the home page for the"
       tutorial: "Ruby on Rails Tutorial"
       sample_application: "sample application"
+      sign_up: "Sign up now!"
+      news: "News"
+      contact: "Contact"
+      about: "About"
     help:
       sample_app: "Sample App"
       help: "Help"
@@ -27,3 +35,9 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       ruby_on_rails: "Ruby on Rails"
       this: "This is the sample app for the tutorial"
+    contact:
+      by: "by"
+      au: "Michael Hartl"
+  user:
+    signup: "Sign Up"
+    content: "This will be a signup page for new users."
