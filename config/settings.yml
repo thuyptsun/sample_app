@@ -17,3 +17,4 @@ validations:
     email_maxlength: 255
     password_minlength: 6
     password_maxlength: 15
+    ava_size: 80

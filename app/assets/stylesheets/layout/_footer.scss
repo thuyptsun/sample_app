@@ -1,4 +1,4 @@
-@import "other/color";
+@import 'other/color';
 
 footer {
   margin-top: 45px;
@@ -11,9 +11,11 @@ footer {
       color: $gray-darker;
     }
   }
+
   small {
   float: left;
   }
+  
   ul {
     float: right;
     list-style: none;

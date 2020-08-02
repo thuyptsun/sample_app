@@ -41,3 +41,14 @@ vi:
   user:
     signup: "Đăng kí"
     content: "Đây sẽ là trang đăng kí cho người dùng mới."
+    name: "Tên"
+    email: "Email"
+    password: "Mật khẩu"
+    password_confirmation: "Xác nhận mật khẩu"
+    create: "Tạo tài khoản"
+  shared:
+    success: "Chào mừng đến với Sample App!"
+    danger: "Đăng kí tài khoản bị lỗi"
+    user_not_found: "Không tìm thấy người dùng"
+    the_form_contains: "Biểu mẫu chứa "
+    error: "lỗi"
