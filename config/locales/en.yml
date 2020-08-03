@@ -41,3 +41,14 @@ en:
   user:
     signup: "Sign Up"
     content: "This will be a signup page for new users."
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    password_confirmation: "Password Confirmation"
+    create: "Create my account"
+  shared:
+    success: "Welcome to the Sample App!"
+    danger: "Sign up error"
+    user_not_found: "User not found"
+    the_form_contains: "The form contains "
+    error: "error"

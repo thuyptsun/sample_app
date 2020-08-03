@@ -1,5 +1,13 @@
-@import "bootstrap-sprockets","bootstrap";
-@import "other/color";
-@import "other/base";
-@import "layout/header";
-@import "layout/footer";
+@import 'bootstrap-sprockets','bootstrap';
+
+@import 'other/color';
+
+@import 'other/base';
+
+@import 'layout/header';
+
+@import 'layout/footer';
+
+@import 'other/sidebar';
+
+@import 'other/box'
