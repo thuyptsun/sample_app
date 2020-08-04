@@ -3,9 +3,33 @@
     <%= link_to "sample app", root_path, id:"logo"%>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to (t "home"), root_path %></li>
-        <li><%= link_to (t "help"), help_path %></li>
-        <li><%= link_to (t "log_in"), "#" %></li>
+        <li><%= link_to t("home"), root_path %></li>
+        <li><%= link_to t("help"), help_path %></li>
+        <% if logged_in? %>
+          <li>
+            <%= link_to t("session.users"), "#" %>
+          </li>
+          <li class="dropdown">
+            <%= link_to("#", class: "dropdown-toggle", "data-toggle": "dropdown" ) do %>
+              <%= t("btn.account") %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to t("btn.profile_btn"), current_user %>
+              </li>
+              <li>
+                <%= link_to t("btn.setting_btn"), '#' %>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t("btn.log_out_btn"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("btn.log_in_btn"), login_path %></li>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-left">
         <li><%= link_to t(".en"), locale: "en" %></li>
