@@ -27,3 +27,25 @@ input {
     color: $state-danger-text;
   }
 }
+
+.checkbox-wrapper {
+  position: relative;
+  height: 30px;
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+    position: absolute;
+    top: 3px;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}

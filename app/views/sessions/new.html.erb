@@ -7,6 +7,12 @@
       <%= f.email_field :email, class: "form-control" %>
       <%= f.label t("user.password") %>
       <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :remember_me, class: "checkbox inline" do %>    
+        <div class="checkbox-wrapper">
+          <%= f.check_box :remember_me %>
+          <span ><%= t("btn.remember") %></span>
+        </div>
+      <% end %>
       <%= f.submit t("log_in"), class: "btn btn-primary" %>
     <% end %>
     <p>
