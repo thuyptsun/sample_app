@@ -48,16 +48,20 @@ en:
     create: "Create my account"
   shared:
     success: "Welcome to the Sample App!"
-    danger: "Sign up error"
+    signup_danger: "Sign up error"
     user_not_found: "User not found"
     the_form_contains: "The form contains "
     error: "error"
+    delete: "Delete"
+    you_sure: "You sure?"
+    user_deleted: "User deleted"
+    delete_danger: "Can not delete user"
   login:
     new_user: "New user?"
-    
+    login_danger: "Please login"
   session:
     success_login_notify: "Logged in successfull!"
-    faild_login_notify: "Invalid password/email combination"
+    failed_login_notify: "Invalid password/email combination"
   btn:
     profile_btn: "Profile"
     setting_btn: "Settings"
@@ -66,4 +70,17 @@ en:
     account: "Account"
     users: "Users"
     remember: "Remember me on this computer"
-
+  edit:
+    title: "Edit user"
+    update: "Update your profile"
+    save: "Save changes"
+    change: "Change"
+    edit_success: "Profile updated"
+    edit_danger: "Can not update profile"
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"

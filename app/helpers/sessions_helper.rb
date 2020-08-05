@@ -1,3 +1,4 @@
+# rubocop:disable Rails/HelperInstanceVariable
 module SessionsHelper
   def log_in user
     session[:user_id] = user.id
@@ -21,6 +22,15 @@ module SessionsHelper
     end
   end
 
+  def redirect_back_or default
+    redirect_to session[:forwarding_url] || default
+    session.delete :forwarding_url
+  end
+
+  def current_user? user
+    user && user == current_user
+  end
+
   def logged_in?
     current_user.present?
   end
@@ -38,6 +48,7 @@ module SessionsHelper
   end
 
   def is_remember_user? user
-    params[:session][:remember_me] == settings.validations.user.checkbox_value ? remember(user) : forget(user)
+    remember_user user
   end
 end
+# rubocop:enable Rails/HelperInstanceVariable

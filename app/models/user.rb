@@ -1,22 +1,23 @@
 class User < ApplicationRecord
   USER_PARAMS = %i(name email password password_confirmation).freeze
-  VALID_EMAIL_REGEX = Settings.validations.user.email_regex
-  
+  VALID_EMAIL_REGEX = Settings.user.email_regex
+
   attr_accessor :remember_token
 
   validates :name, presence: true,
-    length: {minimum: Settings.validations.user.name_minlength,
-             maximum: Settings.validations.user.name_maxlength}
+    length: {minimum: Settings.user.name_minlength,
+             maximum: Settings.user.name_maxlength}
 
   validates :email, presence: true,
-    length: {minimum: Settings.validations.user.email_minlength,
-             maximum: Settings.validations.user.email_maxlength},
+    length: {minimum: Settings.user.email_minlength,
+             maximum: Settings.user.email_maxlength},
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: true
 
   validates :password, presence: true,
-    length: {minimum: Settings.validations.user.password_minlength,
-             maximum: Settings.validations.user.password_maxlength}
+    length: {minimum: Settings.user.password_minlength,
+             maximum: Settings.user.password_maxlength},
+    allow_nil: true
 
   has_secure_password
 
