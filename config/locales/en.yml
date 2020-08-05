@@ -59,9 +59,11 @@ en:
     success_login_notify: "Logged in successfull!"
     faild_login_notify: "Invalid password/email combination"
   btn:
-      profile_btn: "Profile"
-      setting_btn: "Settings"
-      log_out_btn: "Log out"
-      log_in_btn: "Log in"
-      account: "Account"
-      users: "Users"
+    profile_btn: "Profile"
+    setting_btn: "Settings"
+    log_out_btn: "Log out"
+    log_in_btn: "Log in"
+    account: "Account"
+    users: "Users"
+    remember: "Remember me on this computer"
+

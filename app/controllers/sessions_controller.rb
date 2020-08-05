@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       flash[:success] = t "session.success_login_notify"
       log_in user
+      params[:session][:remember_me] == settings.validations.user.checkbox_value ? remember(user) : forget(user)
       redirect_to user
     else
       flash[:danger] = t "session.faild_login_notify"
@@ -15,7 +16,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 end
