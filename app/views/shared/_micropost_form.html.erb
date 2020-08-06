@@ -1,0 +1,15 @@
+<%= form_for(@micropost, html: { multipart: true }) do |f| %>
+  <%= render "shared/error_messages", object: f.object %> 
+  <div class="field">
+    <%= f.text_area :content, placeholder: t("microposts.content.placeholder") %> 
+  </div>
+  <%= f.submit t("microposts.post"), class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: Settings.micropost.types %>
+  </span>
+<% end %>
+
+<script type="text/javascript">
+  const prompt = "<%= t "microposts.oversize_alert" %>"
+</script>
+<%= javascript_pack_tag "micropost", "data-turbolinks-track": "reload" %>
