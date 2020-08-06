@@ -6,16 +6,18 @@ link:
     news: "https://news.railstutorial.org/"
     screencasts: "https://screencasts.railstutorial.org/"
     au: "https://www.michaelhartl.com/"
+    gravatar_email: "https://gravatar.com/emails"
   learnenough: 
     home: "https://www.learnenough.com/"
-validations:
-  user:
-    email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
-    name_minlength: 6
-    name_maxlength: 50
-    email_minlength: 10
-    email_maxlength: 255
-    password_minlength: 6
-    password_maxlength: 15
-    ava_size: 80
-    checkbox_value: "1"
+user:
+  email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  name_minlength: 6
+  name_maxlength: 50
+  email_minlength: 10
+  email_maxlength: 255
+  password_minlength: 6
+  password_maxlength: 15
+  ava_size: 80
+  avatar_small_size: 50
+  value: "1"
+pagination: 10

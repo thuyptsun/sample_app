@@ -6,9 +6,7 @@
         <li><%= link_to t("home"), root_path %></li>
         <li><%= link_to t("help"), help_path %></li>
         <% if logged_in? %>
-          <li>
-            <%= link_to t("session.users"), "#" %>
-          </li>
+          <li><%= link_to t("session.users"), users_path %></li>
           <li class="dropdown">
             <%= link_to("#", class: "dropdown-toggle", "data-toggle": "dropdown" ) do %>
               <%= t("btn.account") %>
@@ -19,7 +17,7 @@
                 <%= link_to t("btn.profile_btn"), current_user %>
               </li>
               <li>
-                <%= link_to t("btn.setting_btn"), '#' %>
+                <%= link_to t("btn.setting_btn"), edit_user_path(current_user) %>
               </li>
               <li class="divider"></li>
               <li>

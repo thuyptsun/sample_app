@@ -47,16 +47,21 @@ vi:
     password_confirmation: "Xác nhận mật khẩu"
     create: "Tạo tài khoản"
   shared:
-    success: "Chào mừng đến với Sample App!"
-    danger: "Đăng kí tài khoản bị lỗi"
+    signup_success: "Chào mừng đến với Sample App!"
+    signup_danger: "Đăng kí tài khoản bị lỗi"
     user_not_found: "Không tìm thấy người dùng"
     the_form_contains: "Biểu mẫu chứa "
     error: "lỗi"
+    delete: "Xoá"
+    you_sure: "Bạn chắc chứ?"
+    user_deleted: "Người dùng đã được xóa"
+    delete_danger: "Không thể xóa người dùng"
   login:
     new_user: "Người dùng mới?"
+    login_danger: "Hãy đăng nhập"
   session:
     success_login_notify: "Đăng nhập thành công"
-    faild_login_notify: "Email hoặc mật khẩu bị sai"
+    failed_login_notify: "Email hoặc mật khẩu bị sai"
     users: "Danh sách người dùng"
   btn:
     profile_btn: "Hồ sơ"
@@ -66,3 +71,17 @@ vi:
     account: "Tài khoản"
     users: "Người dùng"
     remember: "Nhớ tôi ở trên máy tính này"
+  edit:
+    title: "Chỉnh sửa thông tin"
+    update: "Cập nhật hồ sơ của bạn"
+    save: "Lưu thay đổi"
+    change: "Chỉnh sửa"
+    edit_success: "Cập nhật thành công"
+    edit_danger: "Không thể cập nhật thông tin"
+  views:
+    pagination:
+      first: "&laquo; Đầu"
+      last: "Cuối &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Sau &rsaquo;"
+      truncate: "&hellip;"
