@@ -56,6 +56,10 @@ vi:
     you_sure: "Bạn chắc chứ?"
     user_deleted: "Người dùng đã được xóa"
     delete_danger: "Không thể xóa người dùng"
+    account_activated: "Tài khoản đã được kích hoạt"
+    invalid_activation_link: "Đường dẫn kích hoạt không hoạt dộng"
+    account_activation: "Kích hoạt tài khoản"
+    account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra mail để thấy link kích hoạt"
   login:
     new_user: "Người dùng mới?"
     login_danger: "Hãy đăng nhập"
@@ -85,3 +89,7 @@ vi:
       previous: "&lsaquo; Trước"
       next: "Sau &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Chào"
+    welcome: "Chào mừng bạn đến với ứng dụng mẫu, hãy kích hoạt tài khoản bằng đường dẫn sau: "
+    activate: "Kích hoạt"

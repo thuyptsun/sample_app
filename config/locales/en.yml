@@ -56,6 +56,10 @@ en:
     you_sure: "You sure?"
     user_deleted: "User deleted"
     delete_danger: "Can not delete user"
+    account_activated: "Account activated!"
+    invalid_activation_link: "Invalid activation link"
+    account_activation: "Account activation"
+    account_not_activated: "Account not activated. Check your email for the activation link."
   login:
     new_user: "New user?"
     login_danger: "Please login"
@@ -84,3 +88,8 @@ en:
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
       truncate: "&hellip;"
+  mails:
+    greeting: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
+    activate: "Activate"
+    please_activate: "Please check your email to activate your account."
