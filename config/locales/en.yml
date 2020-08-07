@@ -44,6 +44,7 @@ en:
     name: "Name"
     email: "Email"
     password: "Password"
+    forgot_password: "(Forgot password)"
     password_confirmation: "Password Confirmation"
     create: "Create my account"
   shared:
@@ -60,12 +61,21 @@ en:
     invalid_activation_link: "Invalid activation link"
     account_activation: "Account activation"
     account_not_activated: "Account not activated. Check your email for the activation link."
+    password_reset: "Password reset"
+    click_the_link_blow: "To reset your password click the link below:"
+    expire_in: "This link will expire in two hours."
+    if_you_did_not_request: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    cant_be_empty: "can't be empty"
+    password_has_been_reset: "Password has been reset."
+    can_not_reset_password: "Can not reset password"
+    password_reset_has_expired: "Password reset has expired."
   login:
     new_user: "New user?"
     login_danger: "Please login"
   session:
     success_login_notify: "Logged in successfull!"
     failed_login_notify: "Invalid password/email combination"
+    users: "Users"
   btn:
     profile_btn: "Profile"
     setting_btn: "Settings"
@@ -74,6 +84,8 @@ en:
     account: "Account"
     users: "Users"
     remember: "Remember me on this computer"
+    forgot_password: "Forgot password"
+    submit: "Submit"
   edit:
     title: "Edit user"
     update: "Update your profile"
@@ -93,3 +105,11 @@ en:
     welcome: "Welcome to the Sample App! Click on the link below to activate your account: "
     activate: "Activate"
     please_activate: "Please check your email to activate your account."
+    email_sent: "Email sent with password reset instructions"
+    send_fail: "Email address not found"
+  password_reset:
+    title: "Reset passoword"
+    email: "Email"
+    password: "Password"
+    confirmation: "Confirmation"
+    update_password: "Update password"

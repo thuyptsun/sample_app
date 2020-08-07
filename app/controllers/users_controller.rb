@@ -13,6 +13,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    return if @user&.activated
+
     redirect_to root_path
   end
 
@@ -53,7 +55,7 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user&.activated
+    return if @user
 
     flash[:danger] = t "shared.user_not_found"
     redirect_to root_url
