@@ -12,16 +12,18 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    redirect_to root_path
+  end
 
   def edit; end
 
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "shared.signup_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "mails.please_activate"
+      redirect_to root_url
     else
       flash[:danger] = t "shared.signup_danger"
       render :new
@@ -31,7 +33,6 @@ class UsersController < ApplicationController
   def update
     if @user.update user_params
       flash[:success] = t "edit.edit_success"
-      log_in @user
       redirect_to @user
     else
       flash[:danger] = t "edit.edit_danger"
@@ -52,8 +53,8 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user
-    
+    return if @user&.activated
+
     flash[:danger] = t "shared.user_not_found"
     redirect_to root_url
   end
