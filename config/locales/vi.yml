@@ -48,7 +48,12 @@ vi:
     password_confirmation: "Xác nhận mật khẩu"
     create: "Tạo tài khoản"
     info:
-      view_my_profile: "xem thông tin"
+      view_my_profile: "Xem thông tin"
+    stats:
+      follow: "Theo dõi"
+      followers: "Người theo dõi"
+      following: "Đang theo dõi"
+      unfollow: "Hủy theo dõi"
   shared:
     signup_success: "Chào mừng đến với Sample App!"
     signup_danger: "Đăng kí tài khoản bị lỗi"
@@ -71,7 +76,7 @@ vi:
     password_has_been_reset: "Mật khẩu đã được đổi"
     can_not_reset_password: "Không thể đặt lại mật khẩu"
     password_reset_has_expired: "Hết hạn đổi mật khẩu"
-    micropost: "bài viết"
+    micropost: "Bài viết"
     info:
       view_my_profile: "Hiện hồ sơ của tôi"
   login:

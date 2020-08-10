@@ -48,7 +48,12 @@ en:
     password_confirmation: "Password Confirmation"
     create: "Create my account"
     info:
-      view_my_profile: "view my profile"
+      view_my_profile: "View my profile"
+    stats:
+      follow: "Follow"
+      followers: "Followers"
+      following: "Following"
+      unfollow: "Unfollow"
   shared:
     success: "Welcome to the Sample App!"
     signup_danger: "Sign up error"
@@ -71,7 +76,7 @@ en:
     password_has_been_reset: "Password has been reset."
     can_not_reset_password: "Can not reset password"
     password_reset_has_expired: "Password reset has expired."
-    micropost: "micropost"
+    micropost: "Micropost"
     info:
       view_my_profile: "View my profile"
   login:
@@ -133,3 +138,4 @@ en:
       placeholder: "Compose new micropost..."
     micropost_feed: "Micropost Feed"
     micropost_with: ! "Micropost (%{count})"
+    create_alert: "Followed"
