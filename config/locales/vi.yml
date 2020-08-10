@@ -47,6 +47,8 @@ vi:
     forgot_password: "(Quên mật khẩu)"
     password_confirmation: "Xác nhận mật khẩu"
     create: "Tạo tài khoản"
+    info:
+      view_my_profile: "xem thông tin"
   shared:
     signup_success: "Chào mừng đến với Sample App!"
     signup_danger: "Đăng kí tài khoản bị lỗi"
@@ -69,6 +71,9 @@ vi:
     password_has_been_reset: "Mật khẩu đã được đổi"
     can_not_reset_password: "Không thể đặt lại mật khẩu"
     password_reset_has_expired: "Hết hạn đổi mật khẩu"
+    micropost: "bài viết"
+    info:
+      view_my_profile: "Hiện hồ sơ của tôi"
   login:
     new_user: "Người dùng mới?"
     login_danger: "Hãy đăng nhập"
@@ -113,3 +118,18 @@ vi:
     password: "Mật khẩu"
     confirmation: "Nhập lại mật khẩu"
     update_password: "Cập nhật mật khẩu"
+  microposts:
+    micropost_created: "Bài viết đã được tạo"
+    micropost_deleted: "Bài viết đã xóa"
+    micropost_failed: "Không thể đăng bài"
+    oversize_alert: "Giới hàn là 5MB, hãy chọn một ảnh khác."
+    must_be_a_valid_image_format: "ảnh phải đúng định dạnh."
+    should_be_less_than: "phải nhỏ hơn 5MB"
+    post: "Đăng"
+    timestamp:
+      posted: "Đăng "
+      ago: " trước."
+    content:
+      placeholder: "Bạn đang nghĩ gì..."
+    micropost_feeed: "Các bài viết"
+    micropost_with: ! "Bài viết (%{count})"

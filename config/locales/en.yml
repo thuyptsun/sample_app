@@ -47,6 +47,8 @@ en:
     forgot_password: "(Forgot password)"
     password_confirmation: "Password Confirmation"
     create: "Create my account"
+    info:
+      view_my_profile: "view my profile"
   shared:
     success: "Welcome to the Sample App!"
     signup_danger: "Sign up error"
@@ -69,6 +71,9 @@ en:
     password_has_been_reset: "Password has been reset."
     can_not_reset_password: "Can not reset password"
     password_reset_has_expired: "Password reset has expired."
+    micropost: "micropost"
+    info:
+      view_my_profile: "View my profile"
   login:
     new_user: "New user?"
     login_danger: "Please login"
@@ -113,3 +118,18 @@ en:
     password: "Password"
     confirmation: "Confirmation"
     update_password: "Update password"
+  microposts:
+    micropost_created: "Micropost created!"
+    micropost_deleted: "Micropost deleted"
+    micropost_failed: "Micropost failed"
+    oversize_alert: "Maximum file size is 5MB. Please choose a smaller file."
+    must_be_a_valid_image_format: "must be a valid image format"
+    should_be_less_than: "should be less than 5MB"
+    post: "Post"
+    timestamp:
+      posted: "Posted "
+      ago: "ago."
+    content:
+      placeholder: "Compose new micropost..."
+    micropost_feed: "Micropost Feed"
+    micropost_with: ! "Micropost (%{count})"

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.page(params[:page]).per Settings.pagination
+    @users = User.page(params[:page]).per Settings.micropost.pagination
   end
 
   def new
@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.page(params[:page]).per Settings.micropost.pagination
     return if @user&.activated
 
     redirect_to root_path
